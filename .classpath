@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/groovy-all-1.7.5.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/iText-2.1.7.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/jasperreports-4.5.1.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/jasperreports-5.6.0.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/jcommon-1.0.8.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/jlplayer.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/mysql-connector-java-5.1.13-bin.jar"/>
+	<classpathentry kind="lib" path="E:/Programs/JAVA_Program/PRACTICE/java/15-July/jeper.jar/rs2xml.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

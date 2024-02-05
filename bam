@@ -1,0 +1,108 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.5.15
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema java
+--
+
+CREATE DATABASE IF NOT EXISTS java;
+USE java;
+
+--
+-- Definition of table `qbank`
+--
+
+DROP TABLE IF EXISTS `qbank`;
+CREATE TABLE `qbank` (
+  `qno` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `question` varchar(255) NOT NULL,
+  `aopt` varchar(45) NOT NULL,
+  `bopt` varchar(45) NOT NULL,
+  `copt` varchar(45) NOT NULL,
+  `dopt` varchar(45) NOT NULL,
+  `answer` varchar(45) NOT NULL,
+  PRIMARY KEY (`qno`)
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `qbank`
+--
+
+/*!40000 ALTER TABLE `qbank` DISABLE KEYS */;
+INSERT INTO `qbank` (`qno`,`question`,`aopt`,`bopt`,`copt`,`dopt`,`answer`) VALUES 
+ (0,'Which of these musical instruments does not come in two separate parts?','Piano','Cymbasis','Violin','Table','a'),
+ (1,'If you add together a century and a decade, what numerical value do you get?','1110','1010','110','1100','c'),
+ (2,'What is the name for an Elephant\'s long toothe ?','Musk','Tusk','Dusk','Husk','b'),
+ (3,'Which tabla maestro shares his name with a former President of India?','Kishen Maharaj','Fayaaz Khan','Sandeep Das','Zakir Hussain','d'),
+ (4,'In which language was the holy Quran written ? ','Hebrew','Urdu','Arabic ','Persian','c'),
+ (5,'In the song \'Nanna Munna Rahi Hoon, Desh Ka Sipahi\' what does the child ask others to sing along with him?','Vande Mataram ','Jai Jawan','Jai Hind','Jana-Gana-Mana','c'),
+ (6,'Which of these become the Mughal emperor even while his father was still alive?','Babar','Akbar','Jahangir','Aurangzeb','d'),
+ (7,'In the game of chess, normally how many squares can the king move at a time?','One','Two and a half','Three','Four','a'),
+ (8,'Which is the most abundant gas in the atmosphere?','Oxygen','Nitrogen','Carbon Dioxide','Ozone','b'),
+ (9,'Which of these is delta shaped ?','Triangle','Circle','Squres','Rectangle','a'),
+ (10,'Which of these historical chraracters has Shahrukh Khan portrayed in a Hindi film ?','Akbar','Alexander','Aurangzeb','Asoka','d'),
+ (11,'Which of the following vehicles is most likely to carry a long ladder ?','Police Jeep','Ambulance','Fire Engine','Mail Van','c'),
+ (12,'Which of these is not a planet in our solar system ?','Uranus','Sun','Jupiter','Neptune','b'),
+ (13,'Who received his \' vishwarup\' to Arjuna before the battle of Kurukshetra ?','Bheeshma','Parashurama','Krishna','Karna','c'),
+ (14,'Which of these is not a web browser ?','Firefox','Opera','Facebook','Chrome','c'),
+ (15,'What is the literal meaning of \'Natraj\' in Sanskrit ?','Lord of Dance','Lord of Animals','Lord of Plants','Lord of Kings','a'),
+ (16,'Which word would you prefix to \'Danda\' to get the name of a game ?','Khilli','Kancha','Gilli','Tilli','c'),
+ (17,'Which of these are available in red, green or black varieties ?','Methi','Jira','Mirch','Hing','c'),
+ (18,'Which film featured this song ?','Jab We Met','Bachna Ae Haseeno','Love Aaj Kal','Karthik Calling Karthik','c'),
+ (19,'Which actor speaks these lines ?','Rajesh Khanna','Dharmendra','Shashi Kapoor','Sanjeev Kumar','b'),
+ (20,'If a word begins with the letters \'Q\' which letter is most likely to follow it ?','W','U','V','A','b'),
+ (21,'What is the least number of serves required to win a single game of tennis ?','Five','Four','Fifteen','Six','b'),
+ (22,'Which of the following planets is not named after a Roman god?','Jupiter','Mars','Earth','Mercury','c'),
+ (23,'Which of the following states shares its boundary wth a foreign country?','Chhattisgarh','Uttaranchal','Jharkhand','Madhya Pradesh','b'),
+ (24,'Who among the following was not a \'navaratna\' in Mughal emperor Akbar\'s court?','Todarmal','Tansen','Baiju Bawra','Birbal','c'),
+ (25,'Who has the longest tenure as Prime Minister of India ?','Indira Gandhi','Atal Bihari Vajpayee','Jawaharlal Nehru','Manmohan Singh','c'),
+ (26,'The name of which diamond means \'Mountain of Light\' in Persian ?','Akbarshah','Kohinoor','Ratnavali','Nizamshah','b'),
+ (27,'With reference to time, what does \'GMT\' stand for ?','Greenland Mean Time','General Middale Time ','Geographical Middal Time','Greenwich Mean Time','d'),
+ (28,'In which script is English writtten ?','Roman','Greek','Cyrillic','Hebrew','a'),
+ (29,'The Indian cricket team because No.1 in the ICC Test ranking for the first time under whose captaincy ?','Sourav Ganguly','Rahul Dravid','Anil Kumble','M S Dhoni','d'),
+ (30,'According to internationally accepted  standards, which of these is the lightest ?','Squash Ball','Law Tennis Ball','Shuttlecock','Table Tennis Ball','d'),
+ (31,'Which of these planets is positioned betweean the Sun and Venus ?','Earth','Saturn','Jupiter','Mercury','d'),
+ (32,'Which of these is the only Indian state to have its own constitution ?','Sikkim','Tripura','Jammu and Kashmir','Manipur','c'),
+ (33,'Which automobile company owes its origins to firm set up by Sanjay Gandhi ?','Premier Automobiles','Hindustan Motors','Maruti Udyog','Mahindra and Mahindra','c'),
+ (34,'Where would you find the largest pyramid ever built ?','Mexico','Egypt','China','Libya','a'),
+ (35,'In which language was the ancient collection of stories \'Hitopdesha\' originally written ?','Pali','Apabhramsha','Sanskrit','Tamil','c'),
+ (36,'In which modern country would you find Chenghis Khan\'s birthplace ?','Kyrgyzstan','Mongolia','Tajikistan','Kazakhstan','b'),
+ (37,'In this film, to which country does this team go to play in the World Cup ?','UK','Australia','Netherland','South Africa','b'),
+ (38,'What does \'P\' stand for in the internet related abbreviation \'ISP\' ?','Permanent','Provider','Project','Protocol','b'),
+ (39,'Who among the following was not a \'vanar\' in the Ramamyana ?','Sugreev','Hanuman','Angad','Jatayu','d'),
+ (40,'Apart from banks, what can individuals open a savings bank account in India ?','Consumer Court ','Post Office','Planning Commision','Stock Exchange','d'),
+ (41,'Who is Australia\'s head of State?','Paul Keating','Queen Elizabeth ll','Duka of Edinburgh','John Howard','b'),
+ (42,'In 1992, who become the first sportsperson to be honoured with Rajiv Khel  Ratna award?','Vishwanath Anand','Sachin Tendulkar','Geet Sethi ','Leander Paes','a'),
+ (43,'Which of the folllwing has not received the Dadasaheb Phalke Award ?','Satyajit Ray','V Shantaraam','Javed Akhtar','Ashok Kumar','c'),
+ (44,'Which of these cricketers became the Jam Sahib of Nawanagar in 1907 ?','Fateh Singh Rao','Duleepsingh ji','Iftekar Ali Khan','Ranjitsingh ji','d'),
+ (45,'Who is the only actor to play Akbar, Alexander and Porus in various Hindi films ?','Sivaji Ganesan','K L Saigal','Prithviraj Kapoor','Mahipal','c'),
+ (46,'Who was the President of the USA immediately before George W Bush ?','Ronald Reagan','Bill Clinton','Jimmy Carter','George Bush','b'),
+ (47,'Which of these cities is situated on the bank of the Sabarmati river ?','Luknow','Nasik','Ahmedabad','Patna','c'),
+ (48,'Which of the following was not awarded to first place winners in the 1896 Olympic Games ?','Crown of Olive Leaves ','Gold Medal','Diploma','Silver Medal','b'),
+ (49,'Who was the first woman from the Nehru family to become of the Indian National Congress ?','Kamala Nehru','Indira Gandhi','Sonia Gandhi','Vijaya Lakshmi Pandit','b'),
+ (50,'Which song and slogan did the Congress party usse in the 2009 General Elections ?','Jai Ho','Chak De India!','Maa Tujhe Salaam','Yeh Jo Desh Hai Mera','a');
+/*!40000 ALTER TABLE `qbank` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
