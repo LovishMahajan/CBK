@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="rupees" class="java.lang.String"/>
+	<parameter name="amount" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="301" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="752" height="301"/>
+				<imageExpression class="java.lang.String"><![CDATA["E:\\Project\\CBK\\checkreport\\check.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="556" y="34" width="40" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="603" y="53" width="96" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="31" y="107" width="44" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Name]]></text>
+			</staticText>
+			<line>
+				<reportElement x="92" y="126" width="530" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="31" y="147" width="64" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Rupees]]></text>
+			</staticText>
+			<line>
+				<reportElement x="92" y="167" width="511" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="641" y="106" width="100" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ OR ORDER]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="609" y="146" width="135" height="40"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="612" y="164" width="29" height="23"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Rs.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="526" y="259" width="70" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+			<line>
+				<reportElement x="603" y="278" width="138" height="1"/>
+			</line>
+			<image>
+				<reportElement x="606" y="246" width="138" height="43"/>
+				<imageExpression class="java.lang.String"><![CDATA["E:\\Project\\CBK\\checkreport\\d.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="31" y="215" width="172" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="31" y="215" width="48" height="31"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="92" y="226" width="100" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[12X365Y254]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="226" width="52" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Ac No.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="108" y="95" width="514" height="31"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="20" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="612" y="24" width="107" height="29"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="108" y="127" width="495" height="40"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="20" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{rupees}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="641" y="146" width="103" height="40"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="18"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{amount}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="268" y="214" width="226" height="75"/>
+				<imageExpression class="java.lang.String"><![CDATA["E:\\Project\\CBK\\checkreport\\code.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
